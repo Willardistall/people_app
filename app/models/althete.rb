@@ -1,0 +1,2 @@
+class Althete < ApplicationRecord
+end

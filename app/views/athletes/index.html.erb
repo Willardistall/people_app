@@ -1,0 +1,10 @@
+<h1>Athletes</h1>
+<% @athletes.each do |athlete| %>
+  <h2><%= athlete.first_name %></h2>
+  
+  <p><%= link_to 'Show athletes', athlete_path(athlete) %></p>
+  <p><%= link_to 'Edit athletes', edit_athlete_path(athlete) %></p>
+  <p><%= link_to 'Destroy athletes', athlete, method: :delete %></p>
+  
+  <% end %> 
+  <p><%= link_to 'New Athlete', new_athlete_path %></p>
